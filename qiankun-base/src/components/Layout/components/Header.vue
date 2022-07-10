@@ -1,7 +1,12 @@
 <template>
   <el-header class="header">
     <div @click="logout" class="logo-wrapper">
-      <img class="picture" src="../../../assets/header.png" />
+      <img
+        class="picture"
+        alt="logo"
+        src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
+      />
+      designer
     </div>
   </el-header>
 </template>
@@ -31,7 +36,10 @@ export default {
 
 <style lang="less" scoped>
 .logo-wrapper {
-  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 150px;
   height: 100%;
 }
 .picture {
