@@ -31,5 +31,5 @@ export default function(apps) {
       Message.error("微应用加载失败，请检查应用是否可运行");
     }
   });
-  start({ prefetch: true }); // 开启预加载
+  start({ prefetch: true, singular: false }); // 开启预加载
 }

@@ -3,15 +3,17 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import "./publicPath";
+import "antd/dist/antd.css";
 
 //子应用容器
 let root = document.getElementById("root");
 
 function render(props) {
-  const { container } = props || {};
+  const { container, appData, data } = props || {};
+  console.log("菜单props", props);
   ReactDOM.render(
     <React.StrictMode>
-      <App />
+      <App globalData={{ ...appData, ...data }} />
     </React.StrictMode>,
     container
       ? container.querySelector("#root")

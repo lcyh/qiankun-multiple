@@ -11,7 +11,9 @@
     "install:react": "cd qiankun-react && yarn",
     "start:react": "cd qiankun-react && yarn start",
     "install:vue": "cd qiankun-vue && yarn",
-    "start:vue": "cd qiankun-vue && yarn serve"
+    "start:vue": "cd qiankun-vue && yarn serve",
+    "install:menu": "cd qiankun-menu && yarn",
+    "start:menu": "cd qiankun-menu && yarn start"
   },
   "repository": {
     "type": "git",
@@ -25,5 +27,8 @@
   "homepage": "git@github.com:lcyh/qiankun-multiple.git",
   "devDependencies": {
     "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0"
   }
 }

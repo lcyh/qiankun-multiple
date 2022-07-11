@@ -24,11 +24,11 @@ console.log(
   "子应用-vue-window.__POWERED_BY_QIANKUN__",
   window.__POWERED_BY_QIANKUN__
 );
-const router = new VueRouter({
-  mode: "history",
-  // 运行在主应用中时，基础路由地址配置为 /vue
-  base: window.__POWERED_BY_QIANKUN__ ? "/vue" : "/",
-  routes,
-});
+// const router = new VueRouter({
+//   mode: "history",
+//   // 运行在主应用中时，基础路由地址配置为 /vue
+//   base: window.__POWERED_BY_QIANKUN__ ? "/vue" : "/",
+//   routes,
+// });
 
-export default router;
+export default routes;

@@ -5,7 +5,8 @@
       <el-container class="el-container-main">
         <el-aside class="aside-menu" :width="computedWidth">
           <Scrollbar class="scroll-menu">
-            <Menu :menu-status="menuStatus" />
+            <!-- <Menu :menu-status="menuStatus" /> -->
+            <div id="app-qiankun-menu"></div>
           </Scrollbar>
           <div class="icon">
             <i
@@ -20,7 +21,7 @@
             <router-view v-show="$route.name" />
 
             <!-- 子应用渲染区，用于挂载子应用节点 -->
-            <div v-show="!$route.name" id="app-qiankun"></div>
+            <div id="app-qiankun-content"></div>
           </el-main>
         </Scrollbar>
       </el-container>

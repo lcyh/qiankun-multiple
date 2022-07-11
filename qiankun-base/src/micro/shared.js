@@ -1,9 +1,14 @@
 import store from "../store";
+import router from "../router";
 
 const model = {
   /**
    * 获取token
+   *
    */
+  globalData: {
+    type: "platform",
+  },
   getToken: () => store.state.token || 1,
   /**
    * 获取用户数据
@@ -18,6 +23,9 @@ const model = {
    */
   logout() {
     store.dispatch("logout");
+  },
+  push(url) {
+    router.push(url);
   },
 };
 
